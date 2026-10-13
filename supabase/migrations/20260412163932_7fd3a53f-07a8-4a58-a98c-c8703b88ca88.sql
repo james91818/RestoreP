@@ -1,0 +1,1 @@
+UPDATE public.affiliates SET allowed_ips = array_remove(allowed_ips, '34.91.112.17') WHERE name = 'Btraffic';

@@ -1,0 +1,1 @@
+REVOKE ALL ON FUNCTION public.trigger_backup_to_sheets() FROM PUBLIC, anon, authenticated;

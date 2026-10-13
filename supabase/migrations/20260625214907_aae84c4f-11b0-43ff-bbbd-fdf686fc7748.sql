@@ -1,0 +1,1 @@
+ALTER TABLE public.affiliate_deals ADD COLUMN IF NOT EXISTS max_invalid_pct numeric;

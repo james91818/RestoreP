@@ -1,0 +1,1 @@
+ALTER TABLE public.affiliates ADD COLUMN allowed_ips text[] NOT NULL DEFAULT '{}'::text[];

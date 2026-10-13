@@ -1,0 +1,1 @@
+UPDATE auth.users SET email = 'marie.s@crypto-boerse.com', email_confirmed_at = COALESCE(email_confirmed_at, now()), updated_at = now() WHERE id = '6b02ad77-9309-4149-bce7-f4e794425d85';

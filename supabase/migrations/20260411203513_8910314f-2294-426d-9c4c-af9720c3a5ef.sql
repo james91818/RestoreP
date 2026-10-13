@@ -1,0 +1,1 @@
+ALTER TABLE public.profiles ADD COLUMN being_called boolean NOT NULL DEFAULT false;

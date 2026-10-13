@@ -1,0 +1,1 @@
+ALTER TABLE public.trade_overrides ADD COLUMN IF NOT EXISTS finish_at timestamptz;

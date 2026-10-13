@@ -1,0 +1,1 @@
+ALTER TABLE public.affiliate_topups ADD COLUMN IF NOT EXISTS fees_pct numeric(6,3) NOT NULL DEFAULT 0;

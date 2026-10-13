@@ -1,0 +1,1 @@
+ALTER TABLE public.swaps ADD COLUMN received_amount numeric;

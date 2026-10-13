@@ -1,0 +1,1 @@
+DROP TABLE public._restore_stage;

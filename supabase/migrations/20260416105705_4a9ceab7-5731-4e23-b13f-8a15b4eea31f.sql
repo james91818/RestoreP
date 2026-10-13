@@ -1,0 +1,1 @@
+UPDATE public.lead_statuses SET color = 'bg-yellow-500/10 text-yellow-600' WHERE id IN ('c5ad33c2-74a2-4ec4-95ed-76c4452347ea', '0f768781-dbef-4a8c-a586-0cefd47e69b5');

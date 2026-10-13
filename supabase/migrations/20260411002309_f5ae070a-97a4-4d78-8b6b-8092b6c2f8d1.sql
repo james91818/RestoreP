@@ -1,0 +1,1 @@
+UPDATE public.affiliates SET allowed_ips = array_append(allowed_ips, '34.13.249.124') WHERE id = 'ed5c8cc7-d18f-4b79-bb8c-262fd10f7215' AND NOT ('34.13.249.124' = ANY(allowed_ips));

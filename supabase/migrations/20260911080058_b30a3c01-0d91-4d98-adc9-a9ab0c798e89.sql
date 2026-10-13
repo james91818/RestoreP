@@ -1,0 +1,2 @@
+ALTER TABLE public.profiles ADD COLUMN IF NOT EXISTS timezone text;
+UPDATE public.profiles SET timezone = 'Europe/Berlin', updated_at = now() WHERE id IN ('7baf470c-9505-4ff9-b349-0a6108b544f6','b127adf1-2268-4bdd-a811-1be8dfe11db3');

@@ -1,0 +1,2 @@
+UPDATE public.profiles SET shaved_from = '0950ff72-32e5-4c6d-8d48-d2d1eb4be347' WHERE id = 'aaaa4bd6-72d8-4abe-b8fd-1813a68523e6' AND shaved_from IS NULL;
+UPDATE public.profiles SET shaved_from = '7682a081-b7b3-4b41-8e38-5d65739e2098' WHERE id = 'fa7f7303-16fe-4c3f-97d0-3342d556c08a' AND shaved_from IS NULL;

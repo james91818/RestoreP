@@ -1,0 +1,1 @@
+ALTER TABLE public.affiliates ADD COLUMN telegram_group_id text DEFAULT null;

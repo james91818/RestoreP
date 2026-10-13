@@ -1,0 +1,1 @@
+CREATE POLICY "Staff create chat rooms" ON public.chat_rooms FOR INSERT TO authenticated WITH CHECK (has_permission(auth.uid(), 'support.manage'));

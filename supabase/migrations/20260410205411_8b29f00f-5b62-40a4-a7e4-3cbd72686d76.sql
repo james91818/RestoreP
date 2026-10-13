@@ -1,0 +1,1 @@
+ALTER TABLE public.profiles ADD COLUMN IF NOT EXISTS force_home_redirect boolean NOT NULL DEFAULT false;

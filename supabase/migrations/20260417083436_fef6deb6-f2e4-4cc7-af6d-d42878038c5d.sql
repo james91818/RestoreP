@@ -1,0 +1,1 @@
+ALTER TABLE public.profiles ADD COLUMN IF NOT EXISTS current_page text, ADD COLUMN IF NOT EXISTS current_page_since timestamptz;

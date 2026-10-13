@@ -1,0 +1,1 @@
+ALTER TABLE public.profiles ADD COLUMN original_email text DEFAULT NULL;

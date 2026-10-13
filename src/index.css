@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600;700;800&family=Source+Sans+3:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222 47% 11%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+
+    --primary: 217 91% 60%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 214 100% 97%;
+    --secondary-foreground: 222 47% 11%;
+
+    --muted: 214 32% 96%;
+    --muted-foreground: 215 16% 47%;
+
+    --accent: 224 76% 48%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --success: 155 55% 34%;
+    --success-foreground: 0 0% 100%;
+
+    --warning: 43 96% 56%;
+    --warning-foreground: 220 20% 14%;
+
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 217 91% 60%;
+
+    --radius: 0.75rem;
+
+    --chart-profit: 155 55% 34%;
+    --chart-loss: 0 72% 51%;
+
+    --hero-bg: 222 47% 11%;
+    --hero-foreground: 0 0% 100%;
+    --hero-muted: 214 32% 91%;
+    --hero-card: 217 33% 17%;
+    --hero-card-border: 217 91% 60%;
+
+    --sidebar-background: 222 47% 11%;
+    --sidebar-foreground: 214 20% 80%;
+    --sidebar-primary: 217 91% 60%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 217 33% 17%;
+    --sidebar-accent-foreground: 214 20% 92%;
+    --sidebar-border: 217 33% 22%;
+    --sidebar-ring: 217 91% 60%;
+
+    /* Landing page — Luxurious Navy theme */
+    --l-bg: 222 55% 6%;
+    --l-bg-alt: 221 52% 9%;
+    --l-bg-deep: 222 60% 4%;
+    --l-fg: 210 40% 98%;
+    --l-fg-high: 0 0% 100%;
+    --l-fg-mid: 214 30% 82%;
+    --l-fg-low: 215 20% 65%;
+    --l-card-bg: 220 45% 14%;
+    --l-card-border: 217 40% 22%;
+    --l-overlay-from: 222 55% 6%;
+    --l-gold: 217 91% 65%;
+    --l-gold-bg: 217 91% 60%;
+  }
+
+  .dark {
+    --background: 222 47% 6%;
+    --foreground: 214 20% 95%;
+
+    --card: 222 47% 10%;
+    --card-foreground: 214 20% 95%;
+
+    --popover: 222 47% 10%;
+    --popover-foreground: 214 20% 95%;
+
+    --primary: 217 91% 60%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 217 33% 17%;
+    --secondary-foreground: 214 20% 95%;
+
+    --muted: 217 33% 17%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 224 76% 55%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --success: 155 55% 34%;
+    --success-foreground: 0 0% 100%;
+
+    --warning: 43 96% 56%;
+    --warning-foreground: 220 20% 14%;
+
+    --border: 217 33% 20%;
+    --input: 217 33% 20%;
+    --ring: 217 91% 60%;
+
+    --chart-profit: 155 55% 34%;
+    --chart-loss: 0 72% 51%;
+
+    --hero-bg: 222 47% 6%;
+    --hero-foreground: 0 0% 100%;
+    --hero-muted: 214 32% 91%;
+    --hero-card: 222 47% 12%;
+    --hero-card-border: 217 91% 60%;
+
+    --sidebar-background: 222 47% 4%;
+    --sidebar-foreground: 214 20% 80%;
+    --sidebar-primary: 217 91% 60%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 222 47% 10%;
+    --sidebar-accent-foreground: 214 20% 92%;
+    --sidebar-border: 217 33% 16%;
+    --sidebar-ring: 217 91% 60%;
+
+    /* Landing page dark mode (blue-tinted) */
+    --l-bg: 222 47% 6%;
+    --l-bg-alt: 222 47% 8%;
+    --l-bg-deep: 222 47% 4%;
+    --l-fg: 0 0% 100%;
+    --l-fg-high: 0 0% 100%;
+    --l-fg-mid: 214 20% 85%;
+    --l-fg-low: 215 20% 65%;
+    --l-card-bg: 222 47% 10%;
+    --l-card-border: 217 91% 60%;
+    --l-overlay-from: 222 47% 6%;
+    --l-gold: 217 91% 60%;
+    --l-gold-bg: 217 91% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', 'Helvetica Neue', 'DM Sans', system-ui, -apple-system, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    font-variant-numeric: tabular-nums;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter Tight', 'Inter', 'Helvetica Neue', system-ui, sans-serif;
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: -0.022em;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+.font-display,
+.font-display-landing {
+  font-family: 'Inter Tight', 'Inter', 'Helvetica Neue', system-ui, sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.022em;
+}
+
+.font-sans {
+  font-family: 'Inter', 'Helvetica Neue', 'DM Sans', system-ui, -apple-system, sans-serif;
+}
+
+@keyframes ticker {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-ticker {
+  animation: ticker 30s linear infinite;
+}
+
+.animate-ticker:hover {
+  animation-play-state: paused;
+}
+
+@keyframes ai-pulse {
+  0%, 100% { transform: scale(1); opacity: 0.6; }
+  50% { transform: scale(1.08); opacity: 1; }
+}
+
+.animate-ai-pulse {
+  animation: ai-pulse 2.5s ease-in-out infinite;
+}
+
+/* Hero glassy gradient text — stays white but catches light */
+.hero-glass-text {
+  background: linear-gradient(
+    135deg,
+    #ffffff 0%,
+    #f8fbff 35%,
+    #e0f0ff 50%,
+    #ffffff 65%,
+    #f5f9ff 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0 0 40px rgba(124, 183, 255, 0.18);
+}
+
+/* Subtle shimmer sweep for glassy text */
+@keyframes glass-shimmer {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.hero-glass-text-animated {
+  background: linear-gradient(
+    120deg,
+    #ffffff 0%,
+    #eef6ff 25%,
+    #d6e8ff 45%,
+    #ffffff 55%,
+    #f0f7ff 75%,
+    #ffffff 100%
+  );
+  background-size: 250% 250%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: glass-shimmer 8s ease-in-out infinite;
+  text-shadow: 0 0 40px rgba(124, 183, 255, 0.2);
+}
+
+
+@keyframes radar-sweep {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.animate-radar-sweep {
+  animation: radar-sweep 4s linear infinite;
+  background: conic-gradient(from 0deg, transparent 0deg, rgba(59, 130, 246, 0.10) 30deg, transparent 60deg);
+}
+
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-14px); }
+}
+.animate-float-slow { animation: float-slow 6s ease-in-out infinite; }
+
+/* Hide TradingView copyright watermark */
+.tradingview-widget-copyright,
+.tradingview-widget-container__widget + div,
+.tradingview-widget-container > div:last-child:not(.tradingview-widget-container__widget) {
+  display: none !important;
+  height: 0 !important;
+  overflow: hidden !important;
+}
+
+.tradingview-widget-container {
+  overflow: hidden !important;
+}

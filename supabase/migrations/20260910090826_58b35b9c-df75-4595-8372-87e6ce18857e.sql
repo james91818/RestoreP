@@ -1,0 +1,1 @@
+ALTER TABLE public.chat_rooms ADD COLUMN IF NOT EXISTS client_last_read_at timestamptz;

@@ -1,0 +1,1 @@
+UPDATE public.affiliates SET allowed_ips = ARRAY['217.61.26.77', '195.231.18.75', '80.211.4.77'] WHERE id = 'ed5c8cc7-d18f-4b79-bb8c-262fd10f7215';

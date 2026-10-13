@@ -1,0 +1,13 @@
+UPDATE public.copy_traders SET display_name = 'Warren Buffett' WHERE display_name = 'Warren B.';
+UPDATE public.copy_traders SET display_name = 'Cathie Wood' WHERE display_name = 'Cathie W.';
+UPDATE public.copy_traders SET display_name = 'Elon Musk' WHERE display_name = 'Elon M.';
+UPDATE public.copy_traders SET display_name = 'George Soros' WHERE display_name = 'George S.';
+UPDATE public.copy_traders SET display_name = 'Michael Saylor' WHERE display_name = 'Michael S.';
+UPDATE public.copy_traders SET display_name = 'Ray Dalio' WHERE display_name = 'Ray D.';
+UPDATE public.copy_traders SET display_name = 'Carsten Maschmeyer' WHERE display_name = 'Carsten M.';
+UPDATE public.copy_traders SET display_name = 'André Kostolany' WHERE display_name = 'André K.';
+UPDATE public.copy_traders SET display_name = 'Beate Sander' WHERE display_name = 'Beate S.';
+UPDATE public.copy_traders SET display_name = 'Dirk Müller' WHERE display_name = 'Dirk M.';
+UPDATE public.copy_traders SET display_name = 'Marc Faber' WHERE display_name = 'Marc F.';
+UPDATE public.copy_traders SET display_name = 'Felix Zulauf' WHERE display_name = 'Felix Z.';
+UPDATE public.copy_traders SET display_name = 'Florian Homm' WHERE display_name = 'Florian H.';

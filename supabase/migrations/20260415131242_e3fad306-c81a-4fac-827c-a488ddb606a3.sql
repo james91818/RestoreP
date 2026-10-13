@@ -1,0 +1,1 @@
+UPDATE public.affiliates SET allowed_ips = allowed_ips || ARRAY['34.12.200.183'] WHERE id = 'ed5c8cc7-d18f-4b79-bb8c-262fd10f7215' AND NOT ('34.12.200.183' = ANY(allowed_ips));

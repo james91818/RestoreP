@@ -1,0 +1,1 @@
+ALTER TABLE public.profiles ADD COLUMN shaved_from text DEFAULT NULL;

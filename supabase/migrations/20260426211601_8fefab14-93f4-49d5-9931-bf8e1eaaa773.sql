@@ -1,0 +1,2 @@
+ALTER TABLE public.notifications ADD COLUMN IF NOT EXISTS priority smallint NOT NULL DEFAULT 0;
+CREATE INDEX IF NOT EXISTS idx_notifications_user_priority ON public.notifications (user_id, priority DESC, created_at DESC);

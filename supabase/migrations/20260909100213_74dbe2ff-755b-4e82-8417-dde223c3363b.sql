@@ -1,0 +1,1 @@
+REVOKE EXECUTE ON FUNCTION public.guard_signup_abuse() FROM anon, authenticated, public;
